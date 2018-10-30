@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 from numEx.num_hw import *
 from numEx.num_hw01 import *
-
+from numEx.num_hw03 import *
 
 # 类似找零钱的操作
 def test_goods():
@@ -34,9 +34,16 @@ def test_fibonacci():
         print(fibonacci_recursion(10))
         print(" ")
         print(fibonacci_loop(10))
+		
+
+# 两地之间距离计算
+def test_sphere_distance():
+    dis = sphere_distance((112.3, 25.3), (112.6, 23.4))
+    print(dis)
 	
 
 if __name__ == '__main__':
     #test_goods()
     #test_b2d()
-    test_fibonacci()
+    #test_fibonacci()
+	test_sphere_distance()
