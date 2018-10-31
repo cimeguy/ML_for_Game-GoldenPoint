@@ -2,21 +2,28 @@
 # -*- coding: UTF-8 -*-
 from numEx.num_hw import *
 from numEx.num_hw01 import *
-from numEx.num_hw03 import *
 
-# 类似找零钱的操作
+
+# 题目：类似找零钱的操作
 def test_goods():
     list_goods()             
-    get_changes(['item01'],5)
-    get_changes(['item01','item01'],5)
-    get_changes(['item01','item03'],20)
-    get_changes(['item09','item10'],100)
-    get_changes(['item15'],1)
-    get_changes(['item01'],1)
-    get_changes(['item06','item11','item13'],100)
+    d = get_changes(['item01'],5)
+    print(d)
+    d = get_changes(['item01','item01'],5)
+    print(d)
+    d = get_changes(['item01','item03'],20)
+    print(d)
+    d = get_changes(['item09','item10'],100)
+    print(d)
+    d = get_changes(['item15'],1)
+    print(d)
+    d = get_changes(['item01'],1)
+    print(d)
+    d = get_changes(['item06','item11','item13'],100)
+    print(d)
 	
 	
-# 二进制与十进制转换器
+# 题目：二进制与十进制转换器
 def test_b2d():
     print(d2b(15))
     print(d2b(12345))
@@ -36,14 +43,22 @@ def test_fibonacci():
         print(fibonacci_loop(10))
 		
 
-# 两地之间距离计算
+# 题目：两地之间距离计算
 def test_sphere_distance():
-    dis = sphere_distance((112.3, 25.3), (112.6, 23.4))
+    dis = sphere_distance((34.24, 108.95), (30.89, 121.33))
     print(dis)
 	
+    dis = sphere_distance((34.37069, 107.231507), (34.251739, 108.959))
+    print(dis)	
+
+    dis = sphere_distance((134.37069, 107.231507), (34.251739, 108.959))
+    print(dis)
+	
+    dis = sphere_distance((34.37069, 107.231507), (34.251739, -108.959))
+    print(dis)
 
 if __name__ == '__main__':
-    #test_goods()
+    test_goods()
     #test_b2d()
     #test_fibonacci()
-	test_sphere_distance()
+    #test_sphere_distance()

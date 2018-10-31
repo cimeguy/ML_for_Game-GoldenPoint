@@ -1,5 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+
+# 题目：XML文件的生成与解析
+
 from xml.dom import minidom
 
 

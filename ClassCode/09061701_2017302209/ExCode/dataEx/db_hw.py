@@ -1,9 +1,10 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-
+# 题目：实现数据库的操作
 import sqlite3
 import os
+
 
 def create_db(path):
     try:
