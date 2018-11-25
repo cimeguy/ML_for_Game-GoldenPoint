@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 from dataEx.xml_hw import *
 
-
+# 题目八：计算图形面积及周长
 class Shape:
     def __init__(self,id):
         self.name = id
@@ -17,13 +17,13 @@ class Shape:
 		
     def display(self):
         print("id是 "+self.name)
-        print("面积是 "+str(self.area))
-        print("周长是 "+str(self.perimeter))
+        print("面积是 "+str(round(self.area,2)))
+        print("周长是 "+str(round(self.perimeter,2)))
 		
 
 class Rectangle(Shape):
     def __init__(self,n,a,b):
-        super().__init__(n)
+        super(Rectangle).__init__(n)
         self.a = a
         self.b = b
 		

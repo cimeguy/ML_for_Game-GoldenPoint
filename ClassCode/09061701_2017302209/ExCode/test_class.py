@@ -3,7 +3,7 @@
 from classEx.class_hw import *
 		
 
-# ¼ÆËãÍ¼ĞÎÃæ»ı¼°ÖÜ³¤
+# é¢˜ç›®å…«ï¼šè®¡ç®—å›¾å½¢é¢ç§¯åŠå‘¨é•¿
 def test_class():
     rect = Rectangle("rect",2,3)
     rect.cal_area()

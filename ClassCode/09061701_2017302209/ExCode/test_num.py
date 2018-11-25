@@ -1,12 +1,11 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 from numEx.num_hw import *
-from numEx.num_hw01 import *
 
 
-# ÌâÄ¿£ºÀàËÆÕÒÁãÇ®µÄ²Ù×÷
+# é¢˜ç›®ï¼šç±»ä¼¼æ‰¾é›¶é’±çš„æ“ä½œ
 def test_goods():
-    list_goods()             
+    list_goods()
     d = get_changes(['item01'],5)
     print(d)
     d = get_changes(['item01','item01'],5)
@@ -21,29 +20,46 @@ def test_goods():
     print(d)
     d = get_changes(['item06','item11','item13'],100)
     print(d)
-	
-	
-# ÌâÄ¿£º¶ş½øÖÆÓëÊ®½øÖÆ×ª»»Æ÷
+
+
+# é¢˜ç›®ï¼šäºŒè¿›åˆ¶ä¸åè¿›åˆ¶è½¬æ¢å™¨
 def test_b2d():
-    print(d2b(15))
+    print(d2b(0))
     print(d2b(12345))
+    print(d2b(4294967295))  # 32ä½çš„æ— ç¬¦å·æå¤§å€¼
     print(d2b(-1))
-    print(b2d('1111'))
-    print(b2d('101111'))
+    print(d2b(-12345))
+    print(d2b(2147483647))  # 32ä½çš„æœ‰ç¬¦å·æå¤§å€¼
+    print(d2b(-2147483648)) # 32ä½çš„æœ‰ç¬¦å·æå°å€¼
     print(d2b('15ab'))
-	
 
-# ¼ÆËã Fibonacci ĞòÁĞµÄÖµ
+    print(b2d('0'))
+    print(b2d('11000000111001'))
+    print(b2d('11111111111111111111111111111111'))
+    print(b2d('11111111111111111111111111111111',True))
+    print(b2d('11111111111111111100111111000111',True))
+
+    print(b2d('1111111111111111111111111111111'))
+    print(b2d('10000000000000000000000000000000'))
+    print(b2d('11a11'))
+
+
+
+# è®¡ç®— Fibonacci åºåˆ—çš„å€¼
+# import sys
+# sys.setrecursionlimit(2000) # Pythonä¸­é»˜è®¤æœ€å¤§é€’å½’æ·±åº¦ä¸º1000ï¼Œé€šè¿‡setrecursionlimitå¯è®¾ç½®ã€‚
 def test_fibonacci():
-    fibonacci_recursion(0)
-    fibonacci_loop(0)
+    print(fibonacci_recursion(0))
+    print(fibonacci_loop(0))
     for i in range(1,10):
-        print(fibonacci_recursion(10))
-        print(" ")
-        print(fibonacci_loop(10))
-		
+        print(fibonacci_recursion(i))
+        print(fibonacci_loop(i))
 
-# ÌâÄ¿£ºÁ½µØÖ®¼ä¾àÀë¼ÆËã
+    for i in range(30,35):
+        print(fibonacci_recursion(i))
+        print(fibonacci_loop(i))
+
+# é¢˜ç›®ï¼šä¸¤åœ°ä¹‹é—´è·ç¦»è®¡ç®—
 def test_sphere_distance():
     dis = sphere_distance((34.24, 108.95), (30.89, 121.33))
     print(dis)
@@ -58,7 +74,7 @@ def test_sphere_distance():
     print(dis)
 
 if __name__ == '__main__':
-    test_goods()
+    #test_goods()
     #test_b2d()
-    #test_fibonacci()
+    test_fibonacci()
     #test_sphere_distance()
