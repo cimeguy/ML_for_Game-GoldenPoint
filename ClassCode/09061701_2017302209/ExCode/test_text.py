@@ -20,8 +20,6 @@ def test_word():
 # 题目：morse code
 def test_morse():
     s = morse_code("i am morse 258")
-    # 正确输出：
-    # . .       . -   - -       - -   - - -   . - .   . . .   .       . . - - -   . . . . .   - - - . .
     print(s)
 
 if __name__ == '__main__':

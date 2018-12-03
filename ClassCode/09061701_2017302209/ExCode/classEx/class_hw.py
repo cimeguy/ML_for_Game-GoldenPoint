@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-from dataEx.xml_hw import *
+
 
 # 题目八：计算图形面积及周长
-class Shape:
+class Shape(object):
     def __init__(self,id):
         self.name = id
         self.area = 0
@@ -23,7 +23,8 @@ class Shape:
 
 class Rectangle(Shape):
     def __init__(self,n,a,b):
-        super(Rectangle).__init__(n)
+        # super(Rectangle).__init__(n)
+        Shape.__init__(self, n)
         self.a = a
         self.b = b
 		
@@ -37,9 +38,11 @@ class Rectangle(Shape):
         self.perimeter = 2 * (self.a + self.b)
         return self.perimeter	
 
+
 class Triangle(Shape):
     def __init__(self,n,a,b,c):
-        super(Triangle, self).__init__(n)
+        #super(Triangle, self).__init__(n)
+        Shape.__init__(self, n)
         self.a = a
         self.b = b
         self.c = c
@@ -55,9 +58,11 @@ class Triangle(Shape):
         self.perimeter = self.a + self.b + self.c
         return self.perimeter		
 
+
 class Circle(Shape):
     def __init__(self,n,a):
-        super(Circle, self).__init__(n)
+        # super(Circle, self).__init__(n)
+        Shape.__init__(self, n)
         self.a = a
 		
     def cal_area(self):
@@ -69,6 +74,7 @@ class Circle(Shape):
         super().cal_perimeter()
         self.perimeter = 2 * 3.14 * self.a
         return self.perimeter
+
 
 if __name__ == '__main__':
     rect = Rectangle("rect",2,3)
