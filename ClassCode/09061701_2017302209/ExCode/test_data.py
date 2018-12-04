@@ -40,6 +40,6 @@ def test_db():
     print(get_total_salary())
 
 if __name__ == '__main__':
-    # test_db()
-    test_xml()
-    test_data()
+    test_db()
+    #test_xml()
+    #test_data()
