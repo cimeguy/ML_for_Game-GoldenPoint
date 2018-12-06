@@ -119,8 +119,25 @@ def parse_xml(path):
         ret["tileset max"] = max(order_list)
 
     return ret
+	
+def parse_xml_dom(path):
+    dom = minidom.parse(path)
+    root = dom.documentElement
+    a = root.getAttribute('tilemapservice')
+    itemlist = root.getElementsByTagName('title')
+    item = itemlist[0]
+    b = item.firstChild.data
+    itemlist = root.getElementsByTagName('tileset')
+    c = len(itemlist)
+    for i in range(c):
+        item = itemlist[i]
+        d = item.getAttribute('order')
+    e = max(d)
+
+    return [a, b, c, e]
 
 
 if __name__ == "__main__":
     create_xml("..\created.xml")
     print(parse_xml("..\created.xml"))
+    print(parse_xml_dom("..\created.xml"))
