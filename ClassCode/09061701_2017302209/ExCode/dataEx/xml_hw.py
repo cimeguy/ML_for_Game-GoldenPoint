@@ -100,15 +100,25 @@ def create_xml(path):
 def parse_xml(path):
     tree = et.parse(path)  # 解析xml文件，返回ElementTree对象
     root = tree.getroot()  # 获取根节点
-    a = str(root.attrib['tilemapservice'])  # 打印根节点的某一属性值
-    b = root[0].text  # 获取title节点的值
-    c = len(root[7])  # 获取tilesets节点的长度
-    d = [root[7][0].attrib['order'], root[7][1].attrib['order'], root[7][2].attrib['order'],
-         root[7][3].attrib['order'], root[7][4].attrib['order'], root[7][5].attrib['order']]
-    e = d.index(max(d))  # 获取tileset节点中最大的order值
-    f = [a, b, c, e]
 
-    return f
+    ret = dict()
+
+    if 'tilemapservice' in root.attrib:
+        ret["tilemap service"] = root.attrib['tilemapservice']
+
+    ret["title"] = root.find('title').text
+
+    order_list = []
+    for t in root.iter('tileset'):
+        if 'order' in t.attrib:
+            order_list.append(int(t.attrib['order']))
+
+    count = len(order_list)
+    ret["tileset count"] = count
+    if count > 0:
+        ret["tileset max"] = max(order_list)
+
+    return ret
 
 
 if __name__ == "__main__":

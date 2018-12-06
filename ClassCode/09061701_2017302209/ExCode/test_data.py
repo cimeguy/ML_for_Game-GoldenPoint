@@ -41,5 +41,5 @@ def test_db():
 
 if __name__ == '__main__':
     test_db()
-    #test_xml()
+    test_xml()
     #test_data()
