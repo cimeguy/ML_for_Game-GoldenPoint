@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-
+import os
 from xml.dom import minidom
 
 try:
@@ -96,7 +96,6 @@ def create_xml(path):
         dom.writexml(fh, indent='', addindent='\t', newl='\n', encoding='UTF-8')
 
 
-
 def parse_xml(path):
     tree = et.parse(path)  # 解析xml文件，返回ElementTree对象
     root = tree.getroot()  # 获取根节点
@@ -135,6 +134,15 @@ def parse_xml_dom(path):
     e = max(d)
 
     return [a, b, c, e]
+
+
+def test_xml():
+    path = "created.xml"
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_xml("created.xml")
+    print(parse_xml("created.xml"))
 
 
 if __name__ == "__main__":

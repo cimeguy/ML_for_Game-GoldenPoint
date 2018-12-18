@@ -1,16 +1,19 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
+import unittest
 from netEx.net_hw import *
 
 
-def test_net():
-   # print(get_support_city(""))
-   citys = get_support_city("陕西")
-   name = "西安"
-   if name in citys:
-       print(get_weather(name))
-       # get_weather(citys[name])
-	
+# 单元测试
+class TestNumFunc(unittest.TestCase):
+    # 题目：获取当前天气情况
+    def test_net(self):
+       citys = get_support_city("陕西")
+       self.assertIn('西安',citys.keys())
+
+       name = "西安"
+       self.assertGreater(len(get_weather(name)), 0)
+
 
 if __name__ == '__main__':
-    test_net()
+    unittest.main()

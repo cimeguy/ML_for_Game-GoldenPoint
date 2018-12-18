@@ -28,10 +28,14 @@ def unpack_message(message):
     return new_dict
 
 
-if __name__ == "__main__":
-    data_dict = {'type': 50, 'csum': 1, 'ID': 'abcdefghigklmnop', 'dis1': 300, 'dis2': 100, 'count': 20}
+def test_data():
+    data_dict = {'type': 50, 'csum': 1, 'id': 'abcdefghigklmnop', 'dis1': 300, 'dis2': 100, 'count': 20}
     data = pack_message(data_dict)
     print(len(data))
     print(data)
     new_dict = unpack_message(data)
     print(new_dict)
+
+
+if __name__ == "__main__":
+    test_data()

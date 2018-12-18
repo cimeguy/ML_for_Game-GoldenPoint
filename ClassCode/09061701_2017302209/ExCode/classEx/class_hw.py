@@ -76,10 +76,28 @@ class Circle(Shape):
         return self.perimeter
 
 
-if __name__ == '__main__':
+ # 题目：计算图形面积及周长
+def test_class():
     rect = Rectangle("rect",2,3)
     rect.cal_area()
     rect.cal_perimeter()
+    rect.display()
+
+    tri = Triangle("tri",3,4,5)
+    tri.cal_area()
+    tri.cal_perimeter()
+    tri.display()
+
+    c = Circle("c",5)
+    c.cal_area()
+    c.cal_perimeter()
+    c.display()
+
+
+if __name__ == '__main__':
+    rect = Rectangle("rect",2,3)
+    print(rect.cal_area())
+    print(rect.cal_perimeter())
     rect.display()
 	
     tri = Triangle("tri",3,4,5)

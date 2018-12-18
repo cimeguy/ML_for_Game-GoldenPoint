@@ -1,6 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
+
 # 题目：获取当前天气情况
 import requests
 

@@ -44,13 +44,13 @@ class TestNumFunc(unittest.TestCase):
     def test_get_changes(self):
         d = get_changes(['item01'],5)
         self.assertTrue(isinstance(d,type({})))
-        self.assertEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 2, 0.5: 1, 0.1: 2})
+        self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 2, 0.5: 1, 0.1: 2})
         d = get_changes(['item01','item01'],5)
-        self.assertEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 0, 0.5: 0, 0.1: 4})
+        self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 0, 0.5: 0, 0.1: 4})
         d = get_changes(['item01','item03'],20)
-        self.assertEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4})
+        self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4})
         d = get_changes(['item09','item10'],100)
-        self.assertEqual(d, {50: 0, 20: 0, 10: 1, 5: 1, 1: 4, 0.5: 1, 0.1: 0})
+        self.assertDictEqual(d, {50: 0, 20: 0, 10: 1, 5: 1, 1: 4, 0.5: 1, 0.1: 0})
 
         d = get_changes(['item15'],1)
         self.assertEqual(d, "item15不存在，请重新选择。")
@@ -79,12 +79,10 @@ class TestNumFunc(unittest.TestCase):
     # 题目：两地之间距离计算
     def test_sphere_distance(self):
         dis = sphere_distance((34.24, 108.95), (30.89, 121.33))
-        e_dis = abs(dis - 1217.53)
-        self.assertTrue(e_dis < 120)  # 10%的计算误差都算对
+        self.assertAlmostEqual(dis, 1217.53, delta=100)
 
         dis = sphere_distance((34.37069, 107.231507), (34.251739, 108.959))
-        e_dis = abs(dis - 159.21)
-        self.assertTrue(e_dis < 15) # 10%的计算误差都算对
+        self.assertAlmostEqual(dis, 159.21, delta=10)
 
         dis = sphere_distance((134.37069, 107.231507), (34.251739, 108.959))
         self.assertEqual(dis, 'Parameter Error.')
