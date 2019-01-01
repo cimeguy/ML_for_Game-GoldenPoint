@@ -2,7 +2,7 @@
 # -*- coding: UTF-8 -*-
 import unittest
 from numEx.num_hw import *
-
+from numEx.golden_hw import *
 
 # 单元测试
 class TestNumFunc(unittest.TestCase):
@@ -89,6 +89,21 @@ class TestNumFunc(unittest.TestCase):
 
         dis = sphere_distance((34.37069, 107.231507), (34.251739, -108.959))
         self.assertEqual(dis, 'Parameter Error.')
+
+    # 题目：黄金点客户端测试
+    def test_golden_number(self):
+        self.assertTrue(isinstance(get_player_name(), type("")))  # 返回值类型是否正确
+        self.assertGreater(len(get_player_name()), 0)
+
+        h = [ {"name":"我不知道我是谁", "numbers":[(12.3,44.5),(33.4,55.6),(22.3,34.5),(33,44)]},
+            {"name":"super man", "numbers":[(42.3,34.5),(23.4,15.6),(72.3,74.5),(93,94)]}]
+
+        num = get_number(h)
+        self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
+        self.assertEqual(len(num), 2)
+
+        self.assertGreater(num[0], 0)
+        self.assertGreater(num[1], 0)
 
 
 if __name__ == '__main__':
