@@ -32,3 +32,4 @@
 
 2. 在线平台
     - LeetCode (https://leetcode.com/)
+    - LeetCode 中文版 (https://leetcode-cn.com/)
