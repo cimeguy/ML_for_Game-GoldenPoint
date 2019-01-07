@@ -1,7 +1,7 @@
 # Python程序设计
 
 #### 项目介绍
-针对 程序设计实训 的项目集合，训练集题目利用 Python 3 实现。
+针对 程序设计实训 的项目集合，训练集题目利用  **Python 3**  实现。
 
 #### 目录结构说明
 
@@ -20,15 +20,15 @@
 5. 在码云上自己的远端版本库，新建 Pull Request，通知教师作业已完成。
 6. 如果需要修改代码，请重复执行4-5。评判时将以最近一次PR作为作业提交时间。
 
-[说明文档](https://gitee.com/shawn904courses/dashboard/wikis/shawn904courses%2Fcode_cloud_simple_tutorial?doc_id=173637&sort_id=780353)
+[供参考的说明文档](https://gitee.com/shawn904courses/dashboard/wikis/shawn904courses%2Fcode_cloud_simple_tutorial?doc_id=173637&sort_id=780353)
 
 #### 其他说明
 
 1. Git的基本概念和操作，可参考：
-  - https://linux.cn/article-4292-1.html
-  - https://blog.csdn.net/wuyinlei/article/details/53607582
-  - Gitee网站Git大全：https://gitee.com/all-about-git
-  - Git命令在线学习： https://learngitbranching.js.org/
+    - https://linux.cn/article-4292-1.html
+    - https://blog.csdn.net/wuyinlei/article/details/53607582
+    - Gitee网站Git大全：https://gitee.com/all-about-git
+    - Git命令在线学习： https://learngitbranching.js.org/
 
 2. 在线平台
-  - LeetCode (https://leetcode.com/)
+    - LeetCode (https://leetcode.com/)
