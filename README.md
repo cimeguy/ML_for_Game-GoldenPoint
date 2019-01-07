@@ -11,7 +11,7 @@
     - ExCode文件夹：包含有与训练题集对应的各个模块，里面为空代码和单元测试代码。 
 3. Problem sets：训练题集。
 
-#### 参与实践
+#### 参与实践（[供参考的说明文档](https://gitee.com/shawn904courses/dashboard/wikis/shawn904courses%2Fcode_cloud_simple_tutorial?doc_id=173637&sort_id=780353)）
 
 1. 首先 Fork 本项目，生成自己的远端版本库。
 2. 从自己的远端版本库拉取代码到本地计算机，主要为获取空代码框架和单元测试代码。
@@ -20,7 +20,7 @@
 5. 在码云上自己的远端版本库，新建 Pull Request，通知教师作业已完成。
 6. 如果需要修改代码，请重复执行4-5。评判时将以最近一次PR作为作业提交时间。
 
-[供参考的说明文档](https://gitee.com/shawn904courses/dashboard/wikis/shawn904courses%2Fcode_cloud_simple_tutorial?doc_id=173637&sort_id=780353)
+
 
 #### 其他说明
 
