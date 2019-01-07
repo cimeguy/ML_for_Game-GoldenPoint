@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding:UTF-8 -*-
-import time
 
 
 # 题目：黄金点游戏的客户端部分
@@ -31,14 +30,6 @@ def get_number(h_data):
     data2 = G + 1
     tup = (data1, data2)
     return tup
-
-
-def get_time():
-    start = time.clock()
-    get_number(history_data)
-    end = time.clock()
-    pass_time = ("%.10f" % (end - start))
-    return pass_time
 
 
 if __name__ == '__main__':

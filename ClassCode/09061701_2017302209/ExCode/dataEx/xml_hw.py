@@ -16,9 +16,6 @@ def create_xml(path):
 def parse_xml(path):
     pass
 
-	
-def parse_xml_dom(path):
-    pass
 
 
 if __name__ == "__main__":

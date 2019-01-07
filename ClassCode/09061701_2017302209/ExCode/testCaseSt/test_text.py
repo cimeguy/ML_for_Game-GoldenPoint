@@ -12,7 +12,7 @@ class TestTextFunc(unittest.TestCase):
     def test_word(self):
 
         li = word_freq( './testData/text0.txt')
-        self.assertListEqual(li,[('b', 8), ('shorts', 2), ('dollars', 2), ('ok', 2), ('need', 1), ('color', 1), ('purple', 1), ('looks', 1), ('nice', 1), ('eleven', 1)])
+        self.assertListEqual(li,[('b', 16), ('shorts', 4), ('ok', 4), ('dollars', 4), ('welcome', 2), ('twenty', 2), ('thanks', 2), ('purple', 2), ('nice', 2), ('need', 2)])
         li = word_freq( './testData/sight word.txt')
         self.assertListEqual(li,[])
 

@@ -43,11 +43,11 @@ class TestXmlFunc(unittest.TestCase):
             os.remove(path)
 
         create_db(path)
-        new_employee(("tom","m","2018-09-01","123456789"),"A")
-        new_employee(("too","f","2017-09-01","123456788"),"B")
+        new_employee(("tom","m","2018-09-01","430911198810230044"),"A")
+        new_employee(("bob","f","2017-09-01","610130199006120011"),"B")
 
         self.assertEquals(get_total_salary(),16000)
-        delete_employee("123456788")
+        delete_employee("610130199006120011")
         self.assertEquals(get_total_salary(),10000)
 
 

@@ -4,7 +4,7 @@
 
 # 题目八：计算图形面积及周长
 class Shape(object):
-    def __init__(self,id):
+    def __init__(self,name):
         pass
 		
     def cal_area(self):
