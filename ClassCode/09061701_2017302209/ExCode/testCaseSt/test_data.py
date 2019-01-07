@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from dataEx.xml_hw import *
-from dataEx.db_hw import *
-from dataEx.data_hw import *
+from forStudent.dataEx.xml_hw import *
+from forStudent.dataEx.db_hw import *
+from forStudent.dataEx.data_hw import *
 
 try:
     import xml.etree.cElementTree as et
@@ -24,16 +24,6 @@ class TestXmlFunc(unittest.TestCase):
 
         d = parse_xml(path)
         self.assertDictEqual(d,{'tilemap service': 'http://tms.osgeo.org/1.0.0 ', 'title': 'default', 'tileset count': 6, 'tileset max': 5})
-
-        # 修改XML文件
-        tree = et.parse(path)  # 解析xml文件，返回ElementTree对象
-        root = tree.getroot()  # 获取根节点
-        item = root.find("tilesets")
-        et.SubElement(item, "tileset",{"href":"","order":"10","units-per-pixel":"10.588"})
-        tree.write(path)
-
-        d = parse_xml(path)
-        self.assertDictEqual(d,{'tilemap service': 'http://tms.osgeo.org/1.0.0 ', 'title': 'default', 'tileset count': 7, 'tileset max': 10})
 
 
     # 题目：二进制数据报文构建与解析
@@ -59,9 +49,6 @@ class TestXmlFunc(unittest.TestCase):
         self.assertEquals(get_total_salary(),16000)
         delete_employee("123456788")
         self.assertEquals(get_total_salary(),10000)
-
-        set_level_salary("A",2)
-        self.assertEquals(get_total_salary(),2)
 
 
 if __name__ == '__main__':

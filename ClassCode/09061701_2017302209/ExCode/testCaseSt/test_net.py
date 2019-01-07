@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from netEx.net_hw import *
+from forStudent.netEx.net_hw import *
 
 
 # 单元测试

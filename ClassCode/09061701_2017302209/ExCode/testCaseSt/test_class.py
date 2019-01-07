@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from classEx.class_hw import *
+from forStudent.classEx.class_hw import *
 		
 
 # 单元测试
