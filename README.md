@@ -36,9 +36,8 @@
     - LeetCode 中文版 (https://leetcode-cn.com/)
 
 3. 游戏AI设计
-
-  - [微软Malmo](https://www.microsoft.com/en-us/research/project/project-malmo/)
-  - [FlappyBird](https://github.com/yenchenlin/DeepLearningFlappyBird)
-  - [TorchCraft](https://github.com/TorchCraft/TorchCraft)
-  - [ELF](https://github.com/pytorch/ELF)
-  - [PySC2](https://github.com/deepmind/pysc2)
+    - [微软Malmo](https://www.microsoft.com/en-us/research/project/project-malmo/)
+    - [FlappyBird](https://github.com/yenchenlin/DeepLearningFlappyBird)
+    - [TorchCraft](https://github.com/TorchCraft/TorchCraft)
+    - [ELF](https://github.com/pytorch/ELF)
+    - [PySC2](https://github.com/deepmind/pysc2)
