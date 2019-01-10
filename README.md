@@ -1,6 +1,7 @@
 # Python程序设计
 
 #### 项目介绍
+ **Learning by doing!**   
 针对 程序设计实训 的项目集合，训练集题目利用  **Python 3**  实现。
 
 #### 目录结构说明
@@ -33,3 +34,10 @@
 2. 在线平台
     - LeetCode (https://leetcode.com/)
     - LeetCode 中文版 (https://leetcode-cn.com/)
+
+3. 游戏AI设计
+    - [微软Malmo](https://www.microsoft.com/en-us/research/project/project-malmo/)
+    - [FlappyBird](https://github.com/yenchenlin/DeepLearningFlappyBird)
+    - [TorchCraft](https://github.com/TorchCraft/TorchCraft)
+    - [ELF](https://github.com/pytorch/ELF)
+    - [PySC2](https://github.com/deepmind/pysc2)
