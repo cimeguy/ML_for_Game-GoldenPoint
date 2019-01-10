@@ -26,6 +26,7 @@
 #### 其他说明
 
 1. Git的基本概念和操作，可参考：
+    - 码云帮助中心: https://gitee.com/help
     - https://linux.cn/article-4292-1.html
     - https://blog.csdn.net/wuyinlei/article/details/53607582
     - Gitee网站Git大全：https://gitee.com/all-about-git
