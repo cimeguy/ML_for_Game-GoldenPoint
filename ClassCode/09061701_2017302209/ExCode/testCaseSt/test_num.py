@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from forStudent.numEx.num_hw import *
-from forStudent.numEx.golden_hw import *
+from numEx.num_hw import *
+from numEx.golden_hw import *
 
 
 # 单元测试

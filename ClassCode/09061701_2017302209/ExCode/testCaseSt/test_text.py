@@ -1,8 +1,8 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from forStudent.textEx.text_hw import *
-from forStudent.textEx.filter_hw import *
+from textEx.text_hw import *
+from textEx.filter_hw import *
 
 
 # 单元测试

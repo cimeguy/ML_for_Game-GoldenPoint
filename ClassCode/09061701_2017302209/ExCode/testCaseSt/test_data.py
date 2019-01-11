@@ -1,9 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from forStudent.dataEx.xml_hw import *
-from forStudent.dataEx.db_hw import *
-from forStudent.dataEx.data_hw import *
+from dataEx.xml_hw import *
+from dataEx.db_hw import *
+from dataEx.data_hw import *
 
 try:
     import xml.etree.cElementTree as et
