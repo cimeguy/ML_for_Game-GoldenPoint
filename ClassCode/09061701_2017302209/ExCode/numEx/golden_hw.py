@@ -29,15 +29,26 @@ def get_number(h_data):
     g_number = round((0.618 * sum_number/len(h_data)),10)
     data1 = g_number % 100
     data2 = (g_number + 1) % 100
-    tup = (data1, data2)
+    tup = (data1+0.00001, data2+0.00001)
     return tup
 
 
 
 if __name__ == '__main__':
-    history_data = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
-                    'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
-                    'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
-
-    print(get_number(history_data))
     print(get_player_name())
+
+    history_data = {'Bob': [], 'Bart' : [], 'Mary' : []}
+    print(get_number(history_data))
+
+    history_data = {'Bob': [(12.3, 44.5)], 'Bart' : [(42.3, 34.5)], 'Mary' : [(62.3, 47.5)]}
+    print(get_number(history_data))
+
+    history_data = {'Bob': [(12.3, 44.5), (33.4, 55.6)],
+            'Bart' : [(42.3, 34.5), (23.4, 15.6)],
+            'Mary' : [(62.3, 47.5), (23.4, 57.6)]}
+    print(get_number(history_data))
+
+    history_data = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
+            'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
+            'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
+    print(get_number(history_data))
