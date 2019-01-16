@@ -4,9 +4,9 @@ import unittest
 from classEx.class_hw import *
 		
 
-# 单元测试c
+# 单元测试
 class TestClassFunc(unittest.TestCase):
-# 题目：计算图形面积及周长
+    # 题目：计算图形面积及周长
     def test_object(self):
         r = Rectangle("rect",2,3)
         t = Triangle("tri",3,4,5)
