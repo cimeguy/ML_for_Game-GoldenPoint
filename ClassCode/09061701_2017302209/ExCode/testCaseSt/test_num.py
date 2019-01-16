@@ -1,8 +1,9 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-from numEx.num_hw import *
-from numEx.golden_hw import *
+# 注意发布到码云时，需要去掉forStudent前缀
+from forStudent.numEx.num_hw import *
+from forStudent.numEx.golden_hw import *
 
 
 # 单元测试
@@ -67,8 +68,9 @@ class TestNumFunc(unittest.TestCase):
         self.assertTrue(isinstance(get_player_name(), type("")))  # 返回值类型是否正确
         self.assertGreater(len(get_player_name()), 0)
 
-        h = [ {"name":"我不知道我是谁", "numbers":[(12.3,44.5),(33.4,55.6),(22.3,34.5),(33,44)]},
-            {"name":"super man", "numbers":[(42.3,34.5),(23.4,15.6),(72.3,74.5),(93,94)]}]
+        h = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
+                    'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
+                    'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
 
         num = get_number(h)
         self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确

@@ -5,38 +5,39 @@
 # 题目：黄金点游戏的客户端部分
 
 def get_player_name():
-    name = '我爱Python'
+    name = 'Alice'
     return name
 
 
-#  参数 h_data：列表，存放了所有队伍的历史数据。
-#  列表元素为字典形式，字典包含两个键值，name表示队伍名称，numbers表示前面每轮提交的数据。
-#  history_data参数示例：三个玩家，已经玩过四轮，在进行第五轮时，传入的参数history_data。
-#  [ {"name" : "我不知道我是谁", "numbers" : [(12.3,44.5),(33.4,55.6),(22.3,34.5),(33,44)]},
-#    {"name" : "super man", "numbers" : [(42.3,34.5),(23.4,15.6),(72.3,74.5),(93,94)]},
-#    {"name" : "帅哥", "numbers" : [(62.3,47.5),(23.4,57.6),(72.3,24.5),(23,44)]} ]
+#  参数 h_data：字典，存放了所有队伍的历史数据。
+#  字典包含一个键值，"队伍名称" : "前面每轮提交的数据" 。
+#  h_data参数示例：三个玩家，已经玩过四轮，在进行第五轮时，传入的参数h_data。
+#  传入的参数示例：h_data = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
+#                    'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
+#                    'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
 #
-#  返回值：二元组，即本轮的两个数字，保留三位小数，如(12.618,88.0)。
+#  返回值：二元组，即本轮的两个数字，如(12.618,88.0)。
 #  注意控制函数运行时间，过长的运行时间将被判不合格。
+#  注意第一次调用时，各位选手存放的历史数据为空列表
 def get_number(h_data):
-    number = []
-    for i in range(0, len(h_data)):
-        number.append(h_data[i]['numbers'])
     sum_number = 0
-    for j in range(0, len(number)):
-        sum_number += number[j][0][0] + number[j][0][1]
-    G = sum_number/6 * 0.618
-    data1 = G
-    data2 = G + 1
+    for name, nums in h_data.items():
+        if len(nums) > 0:
+            n1, n2 = nums[-1]
+            sum_number += (n1 + n2)
+
+    g_number = round((0.618 * sum_number/len(h_data)),10)
+    data1 = g_number % 100
+    data2 = (g_number + 1) % 100
     tup = (data1, data2)
     return tup
 
 
+
 if __name__ == '__main__':
-    history_data = [{'name': 'Bob', 'numbers': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)]},
-                    {'name': 'Bart', 'numbers': [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)]},
-                    {'name': 'Mary', 'numbers': [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}]
+    history_data = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
+                    'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
+                    'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
 
     print(get_number(history_data))
     print(get_player_name())
-
