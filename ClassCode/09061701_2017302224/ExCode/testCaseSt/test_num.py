@@ -1,7 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 import unittest
-# 注意发布到码云时，需要去掉forStudent前缀
 from numEx.num_hw import *
 from numEx.golden_hw import *
 
@@ -35,9 +34,6 @@ class TestNumFunc(unittest.TestCase):
         d = get_changes(['item01'],5)
         self.assertTrue(isinstance(d,type({})))
         self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 2, 0.5: 1, 0.1: 2})
-        d = get_changes(['item01','item01'],5)
-        self.assertTrue(isinstance(d,type({})))
-        self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 0, 0.5: 0, 0.1: 4})
         d = get_changes(['item15'],1)
         self.assertEqual(d, "item15不存在，请重新选择。")
         d = get_changes(['item01'],1)
@@ -71,43 +67,16 @@ class TestNumFunc(unittest.TestCase):
         self.assertTrue(isinstance(get_player_name(), type("")))  # 返回值类型是否正确
         self.assertGreater(len(get_player_name()), 0)
 
-        h = {'Bob': [], 'Bart' : [], 'Mary' : []}
-        num = get_number(h)
-        self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
-        self.assertEqual(len(num), 2)
-        self.assertGreater(num[0], 0)
-        self.assertGreater(num[1], 0)
-        self.assertLess(num[0], 100)
-        self.assertLess(num[1], 100)
+        h = [ {"name":"我不知道我是谁", "numbers":[(12.3,44.5),(33.4,55.6),(22.3,34.5),(33,44)]},
+            {"name":"super man", "numbers":[(42.3,34.5),(23.4,15.6),(72.3,74.5),(93,94)]}]
 
-        h = {'Bob': [(12.3, 44.5)], 'Bart' : [(42.3, 34.5)], 'Mary' : [(62.3, 47.5)]}
         num = get_number(h)
         self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
         self.assertEqual(len(num), 2)
-        self.assertGreater(num[0], 0)
-        self.assertGreater(num[1], 0)
-        self.assertLess(num[0], 100)
-        self.assertLess(num[1], 100)
 
-        h = {'Bob': [(12.3, 44.5), (33.4, 55.6)],
-                'Bart' : [(42.3, 34.5), (23.4, 15.6)],
-                'Mary' : [(62.3, 47.5), (23.4, 57.6)]}
-        num = get_number(h)
-        self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
-        self.assertEqual(len(num), 2)
         self.assertGreater(num[0], 0)
         self.assertGreater(num[1], 0)
-        self.assertLess(num[0], 100)
-        self.assertLess(num[1], 100)
 
-        h = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
-                'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
-                'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
-        num = get_number(h)
-        self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
-        self.assertEqual(len(num), 2)
-        self.assertGreater(num[0], 0)
-        self.assertGreater(num[1], 0)
         self.assertLess(num[0], 100)
         self.assertLess(num[1], 100)
 
