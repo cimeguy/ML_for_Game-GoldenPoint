@@ -18,7 +18,7 @@ def get_player_name():
 #
 #  返回值：二元组，即本轮的两个数字，如(12.618,88.0)，两个数字均应大于0，小于100。
 #  注意控制函数运行时间，过长的运行时间将被判不合格。
-#  注意第一次调用时，各位选手存放的历史数据为空列表。
+#  注意第一次调用时，各位选手存放的历史数据为空列表
 def get_number(h_data):
     sum_number = 0
     for name, nums in h_data.items():
@@ -29,7 +29,7 @@ def get_number(h_data):
     g_number = round((0.618 * sum_number/len(h_data)),10)
     data1 = g_number % 100
     data2 = (g_number + 1) % 100
-    tup = (data1+0.00001, data2+0.00001)
+    tup = (data1+0.0000000001, data2)
     return tup
 
 
