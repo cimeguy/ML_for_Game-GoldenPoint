@@ -38,6 +38,7 @@
     - Git命令在线学习： https://learngitbranching.js.org/
 
 2. 技术论坛与网站 
+    - Python文档：https://www.python.org/doc/
     - CSDN: https://www.csdn.net/
     - Stack overflow: https://stackoverflow.com/
 
