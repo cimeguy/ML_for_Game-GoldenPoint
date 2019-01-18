@@ -1,4 +1,4 @@
-测试用例数量：74
+测试用例数量：73
 
 1. 失败的测试用例数量：0
 
@@ -21,6 +21,6 @@ Traceback (most recent call last):
 TypeError: 'NoneType' object is not subscriptable
 
 
-3. 通过的测试用例数量：72
+3. 通过的测试用例数量：71
 
 总分80分，最后得分：78

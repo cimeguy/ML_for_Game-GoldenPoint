@@ -1,17 +1,9 @@
-测试用例数量：74
+测试用例数量：73
 
 1. 失败的测试用例数量：0
 
-2. 错误的测试用例数量：3
+2. 错误的测试用例数量：2
 错误的测试用例：
-testCaseTea.test_num.TestNumFunc.test_golden_number
-Traceback (most recent call last):
-  File "..\testCaseTea\test_num.py", line 176, in test_golden_number
-    num = get_number(h)
-  File "..\numEx\golden_hw.py", line 24, in get_number
-    number.append(h_data[i]['numbers'])
-KeyError: 0
-
 testCaseTea.test_net.TestNetFunc.test_net_1
 Traceback (most recent call last):
   File "..\testCaseTea\test_net.py", line 16, in test_net_1
@@ -31,4 +23,4 @@ IndexError: list index out of range
 
 3. 通过的测试用例数量：71
 
-总分80分，最后得分：77
+总分80分，最后得分：78
