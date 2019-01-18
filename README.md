@@ -29,18 +29,22 @@
 
 #### 其他说明
 
-1. Git的基本概念和操作，可参考：
+1. Git的基本概念和操作，可参考： 
     - 码云帮助中心: https://gitee.com/help
     - https://linux.cn/article-4292-1.html
     - https://blog.csdn.net/wuyinlei/article/details/53607582
     - Gitee网站Git大全：https://gitee.com/all-about-git
     - Git命令在线学习： https://learngitbranching.js.org/
 
-2. 在线平台
+2. 技术论坛与网站 
+    - CSDN: https://www.csdn.net/
+    - Stack overflow: https://stackoverflow.com/
+
+3. 在线平台 
     - LeetCode (https://leetcode.com/)
     - LeetCode 中文版 (https://leetcode-cn.com/)
 
-3. 游戏AI设计
+4. 游戏AI设计 
     - [微软Malmo](https://www.microsoft.com/en-us/research/project/project-malmo/)
     - [FlappyBird](https://github.com/yenchenlin/DeepLearningFlappyBird)
     - [TorchCraft](https://github.com/TorchCraft/TorchCraft)
