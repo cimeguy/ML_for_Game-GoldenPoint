@@ -5,7 +5,7 @@ import time
 
 # 题目：黄金点游戏的客户端部分
 
-# 字符串，即队伍名称，用于在大屏幕显示，不超过16个字符。
+# 字符串，即队伍名称，用于在大屏幕显示，不超过16个字符
 def get_player_name():
     name = 'Alice'
     return name
@@ -34,7 +34,8 @@ def get_number(h_data):
     tup = (data1+0.0000000001, data2)
     return tup
 
-# 可用于代码运行时间的简单测试
+
+# 运行时间测试
 def get_time():
     start = time.clock()
     get_number(history_data)
