@@ -389,7 +389,7 @@ def test_morse_1(self):
 
 def test_morse_2(self):
     s = morse_code("I love Python")
-    self.assertEqual(s,". .       . - . .   - - -   . . .-   .       . - - .   - . - -   -   . . . .   - - -   - .")
+    self.assertEqual(s,". .       . - . .   - - -   . . . -   .       . - - .   - . - -   -   . . . .   - - -   - .")
 
 def test_filter(self):
     dir_path = "./testData"
