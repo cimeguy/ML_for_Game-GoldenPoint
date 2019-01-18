@@ -14,7 +14,8 @@
         - report.pdf： 实训报告电子版，只接收pdf格式。
         - ExCode文件夹：包含有与训练题集对应的各个模块，里面为空代码和单元测试代码。
 3. ClassCode：提交代码的文件夹。根据个人情况，新建子文件（文件夹命名按“09061701_2017302209”格式），然后将个人的作业放置到新建的子文件中，作为作业提交。
-
+4. Test Results: 测试用例运行日志文件，每个同学对应一个日志文件，记录了测试通过情况，失败用例、错误的代码运行等信息。
+5. score.md： 自动评判得到的成绩。
 
 #### 参与实践（[供参考的说明文档](https://gitee.com/shawn904courses/dashboard/wikis/shawn904courses%2Fcode_cloud_simple_tutorial?doc_id=173637&sort_id=780353)）
 
