@@ -1,0 +1,425 @@
+def test_object_1(self):
+    r = Rectangle("rect",2,3)
+    self.assertTrue(isinstance(r, Rectangle))  # r = Rectangle("rect",2,3)
+    self.assertTrue(isinstance(r, Shape))      # r = Rectangle("rect",2,3)
+
+def test_object_2(self):
+    t = Triangle("tri",3,4,5)
+    self.assertTrue(isinstance(t, Triangle))  # t = Triangle("tri",3,4,5)
+    self.assertTrue(isinstance(t, Shape))     # t = Triangle("tri",3,4,5)
+
+def test_object_3(self):
+    c = Circle("c",5)
+    self.assertTrue(isinstance(c, Circle))    # c = Circle("c",5)
+    self.assertTrue(isinstance(c, Shape))     # c = Circle("c",5)
+
+def test_calculation_1(self):
+    r = Rectangle("rect",2,3)
+    area = r.cal_area()
+    self.assertEquals(area, 6)   # r = Rectangle("rect",2,3)  area = r.cal_area()
+
+def test_calculation_2(self):
+    r = Rectangle("rect",2,3)
+    per = r.cal_perimeter()
+    self.assertEqual(per, 10)  # r = Rectangle("rect",2,3)  per = r.cal_perimeter()
+
+def test_calculation_3(self):
+    t = Triangle("tri",3,4,5)
+    area = t.cal_area()
+    self.assertAlmostEqual(area, 6, delta=0.1)  # t = Triangle("tri",3,4,5)  area = t.cal_area()
+
+def test_calculation_4(self):
+    t = Triangle("tri",3,4,5)
+    per = t.cal_perimeter()
+    self.assertEqual(per, 12)     # t = Triangle("tri",3,4,5)  per = t.cal_perimeter()
+
+def test_calculation_5(self):
+    c = Circle("c",5)
+    area = c.cal_area()
+    self.assertAlmostEqual(area, 78.5, delta=0.1)  # c = Circle("c",5)  area = c.cal_area()
+
+def test_calculation_6(self):
+    c = Circle("c",5)
+    per = c.cal_perimeter()
+    self.assertAlmostEqual(per, 31.4, delta=0.1)  # c = Circle("c",5)  per = c.cal_perimeter()
+
+def test_Xml_1(self):
+    path = "./created.xml"
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_xml(path)
+    self.assertTrue(os.path.exists(path))
+
+def test_Xml_2(self):
+    path = "./created.xml"
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_xml(path)
+    self.assertTrue(os.path.exists(path))
+
+    d = parse_xml(path)
+    self.assertDictEqual(d,{'tilemap service': 'http://tms.osgeo.org/1.0.0 ', 'title': 'default', 'tileset count': 6, 'tileset max': 5})
+
+def test_Xml_3(self):
+    path = "./created.xml"
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_xml(path)
+    self.assertTrue(os.path.exists(path))
+
+    d = parse_xml(path)
+    self.assertDictEqual(d,{'tilemap service': 'http://tms.osgeo.org/1.0.0 ', 'title': 'default', 'tileset count': 6, 'tileset max': 5})
+
+    # 修改XML文件
+    tree = et.parse(path)  # 解析xml文件，返回ElementTree对象
+    root = tree.getroot()  # 获取根节点
+    item = root.find("tilesets")
+    et.SubElement(item, "tileset",{"href":"","order":"10","units-per-pixel":"10.588"})
+    tree.write(path)
+
+    d = parse_xml(path)
+    self.assertDictEqual(d,{'tilemap service': 'http://tms.osgeo.org/1.0.0 ', 'title': 'default', 'tileset count': 7, 'tileset max': 10})
+
+def test_data_1(self):
+    data_dict = {'type': 50, 'csum': 1, 'id': 'abcdefghigklmnop', 'dis1': 300, 'dis2': 100, 'count': 20}
+    data = pack_message(data_dict)
+    self.assertEquals(data, b'2\x01abcdefghigklmnop\x00\x00\x01,\x00\x00\x00d\x14')
+
+def test_data_2(self):
+    data_dict = {'type': 50, 'csum': 1, 'id': 'abcdefghigklmnop', 'dis1': 300, 'dis2': 100, 'count': 20}
+    data = pack_message(data_dict)
+    self.assertEquals(data, b'2\x01abcdefghigklmnop\x00\x00\x01,\x00\x00\x00d\x14')
+
+    new_dict = unpack_message(data)
+    self.assertDictEqual(new_dict,data_dict)
+
+def test_db_1(self):
+    path = './test.db'
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_db(path)
+    self.assertTrue(os.path.exists(path))
+
+def test_db_2(self):
+    path = './test.db'
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_db(path)
+    self.assertTrue(os.path.exists(path))
+    new_employee(("tom","m","2018-09-01","123456789"),"A")
+    new_employee(("too","f","2017-09-01","123456788"),"B")
+
+    self.assertEquals(get_total_salary(),16000)
+
+def test_db_3(self):
+    path = './test.db'
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_db(path)
+    self.assertTrue(os.path.exists(path))
+    new_employee(("tom","m","2018-09-01","123456789"),"A")
+    new_employee(("too","f","2017-09-01","123456788"),"B")
+
+    self.assertEquals(get_total_salary(),16000)
+    delete_employee("123456788")
+    self.assertEquals(get_total_salary(),10000)
+
+    set_level_salary("A",2)
+    self.assertEquals(get_total_salary(),2)
+
+def test_db_4(self):
+    path = './test.db'
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_db(path)
+    self.assertTrue(os.path.exists(path))
+    new_employee(("tom","m","2018-09-01","123456789"),"A")
+    new_employee(("too","f","2017-09-01","123456788"),"B")
+
+    self.assertEquals(get_total_salary(),16000)
+    delete_employee("123456788")
+    set_level_salary("A",2)
+    self.assertEquals(get_total_salary(),2)
+
+def test_net_1(self):
+   citys = get_support_city("陕西")
+   self.assertIn('西安',citys.keys())
+
+   name = "西安"
+   self.assertGreater(len(get_weather(name)), 0)
+   time.sleep(1) # 连续调用网络服务可能会出错
+
+def test_net_2(self):
+   citys = get_support_city("湖南")
+   self.assertIn('益阳',citys.keys())
+
+   name = "益阳"
+   self.assertGreater(len(get_weather(name)), 0)
+   time.sleep(1)
+
+def test_d2b_1(self):
+    self.assertTrue(isinstance(d2b(0), type("")))  # 返回值是否正确
+
+def test_d2b_2(self):
+    self.assertEqual(d2b(0), '0')
+
+def test_d2b_3(self):
+    self.assertEqual(d2b(12345), '11000000111001')
+
+def test_d2b_4(self):
+    self.assertEqual(d2b(4294967295), '11111111111111111111111111111111')  # 32位的无符号极大值
+
+def test_d2b_5(self):
+    self.assertEqual(d2b(-1), '11111111111111111111111111111111')
+
+def test_d2b_6(self):
+    self.assertEqual(d2b(-12345), '11111111111111111100111111000111')
+
+def test_d2b_7(self):
+    self.assertEqual(d2b(2147483647), '1111111111111111111111111111111')   # 32位的有符号极大值
+
+def test_d2b_8(self):
+    self.assertEqual(d2b(-2147483648), '10000000000000000000000000000000')   # 32位的有符号极小值
+
+def test_d2b_9(self):
+    self.assertEqual(d2b('15ab'), 'Parameter Error.')
+
+def test_b2d_1(self):
+    self.assertTrue(isinstance(b2d('0'), type(0)))  # 返回值是否正确
+
+def test_b2d_2(self):
+    self.assertEqual(b2d('0'), 0)
+
+def test_b2d_3(self):
+    self.assertEqual(b2d('11000000111001'), 12345)
+
+def test_b2d_4(self):
+    self.assertEqual(b2d('11111111111111111111111111111111'), 4294967295)
+
+def test_b2d_5(self):
+    self.assertEqual(b2d('11111111111111111111111111111111',True), -1)
+
+def test_b2d_6(self):
+    self.assertEqual(b2d('11111111111111111100111111000111',True), -12345)
+
+def test_b2d_7(self):
+    self.assertEqual(b2d('1111111111111111111111111111111'), 2147483647)
+
+def test_b2d_8(self):
+    self.assertEqual(b2d('10000000000000000000000000000000'), 2147483648)
+
+def test_b2d_9(self):
+    self.assertEqual(b2d('10000000000000000000000000000000',True), -2147483648)
+
+def test_b2d_10(self):
+    self.assertEqual(b2d('11a11'), 'Parameter Error.')
+
+def test_b2d_11(self):
+    self.assertEqual(b2d(1234), 'Parameter Error.')
+
+
+# 题目：类似找零钱的操作
+def test_list_goods_1(self):
+    d = list_goods()
+    self.assertTrue(d, type(""))
+
+def test_list_goods_2(self):
+    d = list_goods()
+    self.assertTrue(d, type(""))
+    self.assertTrue(len(d) > 0)
+
+def test_get_changes_1(self):
+    d = get_changes(['item01'],5)
+    self.assertTrue(isinstance(d,type({})))
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 2, 0.5: 1, 0.1: 2})
+
+def test_get_changes_2(self):
+    d = get_changes(['item01','item01'],5)
+    self.assertTrue(isinstance(d,type({})))
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 0, 0.5: 0, 0.1: 4})
+
+def test_get_changes_3(self):
+    d = get_changes(['item01','item03'],20)
+    self.assertTrue(isinstance(d,type({})))
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4})
+
+def test_get_changes_4(self):
+    d = get_changes(['item09','item10'],100)
+    self.assertTrue(isinstance(d,type({})))
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 1, 5: 1, 1: 4, 0.5: 1, 0.1: 0})
+
+def test_get_changes_5(self):
+    d = get_changes(['item15'],1)
+    self.assertEqual(d, "item15不存在，请重新选择。")
+
+def test_get_changes_6(self):
+    d = get_changes(['item01'],1)
+    self.assertEqual(d, "支付金额不足，请重新支付。")
+
+def test_get_changes_7(self):
+    d = get_changes(['item06','item11','item13'],100)
+    self.assertEqual(d, "item11、item13不存在，请重新选择。")
+
+def test_fibonacci_1(self):
+    self.assertEqual(fibonacci_recursion(0), 'Parameter Error.')
+
+def test_fibonacci_2(self):
+    self.assertEqual(fibonacci_recursion(1), 1)
+
+def test_fibonacci_3(self):
+    self.assertEqual(fibonacci_recursion(2), 1)
+
+def test_fibonacci_4(self):
+    self.assertEqual(fibonacci_recursion(3), 2)
+
+def test_fibonacci_5(self):
+    self.assertEqual(fibonacci_recursion(30), 832040)
+
+def test_fibonacci_6(self):
+    self.assertEqual(fibonacci_recursion(34), 5702887)
+
+def test_fibonacci_7(self):
+    self.assertEqual(fibonacci_loop(0), 'Parameter Error.')
+
+def test_fibonacci_8(self):
+    self.assertEqual(fibonacci_loop(1), 1)
+
+def test_fibonacci_9(self):
+    self.assertEqual(fibonacci_loop(2), 1)
+
+def test_fibonacci_10(self):
+    self.assertEqual(fibonacci_loop(3), 2)
+
+def test_fibonacci_11(self):
+    self.assertEqual(fibonacci_loop(30), 832040)
+
+def test_fibonacci_12(self):
+    self.assertEqual(fibonacci_loop(34), 5702887)
+
+def test_sphere_distance_1(self):
+    dis = sphere_distance((34.24, 108.95), (30.89, 121.33))
+    self.assertAlmostEqual(dis, 1217.53, delta=100)
+
+def test_sphere_distance_2(self):
+    dis = sphere_distance((34.37069, 107.231507), (34.251739, 108.959))
+    self.assertAlmostEqual(dis, 159.21, delta=10)
+
+def test_sphere_distance_3(self):
+    dis = sphere_distance((134.37069, 107.231507), (34.251739, 108.959))
+    self.assertEqual(dis, 'Parameter Error.')
+
+def test_sphere_distance_4(self):
+    dis = sphere_distance((34.37069, 107.231507), (34.251739, -108.959))
+    self.assertEqual(dis, 'Parameter Error.')
+
+def test_golden_number(self):
+    self.assertTrue(isinstance(get_player_name(), type("")))  # 返回值类型是否正确
+    self.assertGreater(len(get_player_name()), 0)
+
+    h = {'Bob': [], 'Bart' : [], 'Mary' : []}
+    num = get_number(h)
+    self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
+    self.assertEqual(len(num), 2)
+    self.assertGreater(num[0], 0)
+    self.assertGreater(num[1], 0)
+    self.assertLess(num[0], 100)
+    self.assertLess(num[1], 100)
+
+    h = {'Bob': [(12.3, 44.5)], 'Bart' : [(42.3, 34.5)], 'Mary' : [(62.3, 47.5)]}
+    num = get_number(h)
+    self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
+    self.assertEqual(len(num), 2)
+    self.assertGreater(num[0], 0)
+    self.assertGreater(num[1], 0)
+    self.assertLess(num[0], 100)
+    self.assertLess(num[1], 100)
+
+    h = {'Bob': [(12.3, 44.5), (33.4, 55.6)],
+            'Bart' : [(42.3, 34.5), (23.4, 15.6)],
+            'Mary' : [(62.3, 47.5), (23.4, 57.6)]}
+    num = get_number(h)
+    self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
+    self.assertEqual(len(num), 2)
+    self.assertGreater(num[0], 0)
+    self.assertGreater(num[1], 0)
+    self.assertLess(num[0], 100)
+    self.assertLess(num[1], 100)
+
+    h = {'Bob': [(12.3, 44.5), (33.4, 55.6), (22.3, 34.5)],
+            'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
+            'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
+    num = get_number(h)
+    self.assertTrue(isinstance(num, type((1,2))))  # 返回值类型是否正确
+    self.assertEqual(len(num), 2)
+    self.assertGreater(num[0], 0)
+    self.assertGreater(num[1], 0)
+    self.assertLess(num[0], 100)
+    self.assertLess(num[1], 100)
+
+def test_word_1(self):
+    li = word_freq('./testData/text0.txt')
+    self.assertListEqual(li,[('b', 16), ('shorts', 4), ('ok', 4), ('dollars', 4), ('welcome', 2), ('twenty', 2), ('thanks', 2), ('purple', 2), ('nice', 2), ('need', 2)])
+
+def test_word_2(self):
+    li = word_freq('./testData/text1.txt')
+    self.assertListEqual(li,[('tara', 11), ('arabic', 6), ('women', 5), ('esl', 5), ('each', 5), ('students', 4), ('rose', 4), ('other', 4), ('iraq', 4), ('day', 4)])
+
+def test_word_3(self):
+    li = word_freq('./testData/text2.txt')
+    self.assertListEqual(li,[('hacker', 78), ('hackers', 61), ('learn', 37), ('—', 33), ('source', 30), ('other', 28), ('software', 26), ('linux', 26), ('most', 25), ('culture', 25)])
+
+def test_word_4(self):
+    li = word_freq('./testData/text3.txt')
+    self.assertListEqual(li,[('1000', 5), ('place', 4), ('house', 4), ('back', 4), ('visit', 3), ('himself', 3), ('happy', 3), ('great', 3), ('dogs', 3), ('wagging', 2)])
+
+def test_word_5(self):
+    li = word_freq('./testData/sight word.txt')
+    self.assertListEqual(li,[])
+
+def test_morse_1(self):
+    s = morse_code("i am morse 258")
+    self.assertEqual(s,". .       . -   - -       - -   - - -   . - .   . . .   .       . . - - -   . . . . .   - - - . .")
+
+def test_morse_2(self):
+    s = morse_code("I love Python")
+    self.assertEqual(s,". .       . - . .   - - -   . . .-   .       . - - .   - . - -   -   . . . .   - - -   - .")
+
+def test_filter(self):
+    dir_path = "./testData"
+    _file_list = []
+    # 得到该文件夹下的所有C文件
+    fp = os.listdir(dir_path)
+    for item in fp:
+        item_path = os.path.join(dir_path, item)
+        if os.path.isfile(item_path): # 只针对文件继续操作
+            ext = os.path.splitext(item)[1]
+            if ext in [".cpp", ".c"]:
+                _file_list.append(item)
+    # 删除C文件对应存在的txt文件
+    for item in _file_list:
+        item_path = os.path.join(dir_path, item.split(".")[0] + ".txt")
+        if os.path.exists(item_path):
+            os.remove(item_path)
+    filter_c_file(dir_path)
+    # 查看txt文件的存在性
+    for item in _file_list:
+        item_path = os.path.join(dir_path, item.split(".")[0] + ".txt")
+        self.assertTrue(os.path.exists(item_path))
+    # 比对文件
+    for item in _file_list:
+        txt_path = os.path.join(dir_path, item.split(".")[0] + ".txt")
+        txtv_path = os.path.join(dir_path, item.split(".")[0] + "_v.txt")
+
+        with open(txt_path, "r", encoding='gb18030',errors="ignore") as nf:
+            lines = nf.readlines()
+        with open(txtv_path, "r", encoding='gb18030',errors="ignore") as nf:
+            vlines = nf.readlines()
+
+        self.assertListEqual(lines,vlines)
