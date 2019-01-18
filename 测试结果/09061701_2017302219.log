@@ -1,0 +1,152 @@
+测试用例数量：74
+
+1. 未通过的测试用例数量：8
+1. 未通过的测试用例：
+testCaseTea.test_text.TestTextFunc.test_morse_2
+Traceback (most recent call last):
+  File "..\testCaseTea\test_text.py", line 39, in test_morse_2
+    self.assertEqual(s,". .       . - . .   - - -   . . .-   .       . - - .   - . - -   -   . . . .   - - -   - .")
+AssertionError: '. . [24 chars]. . . -   .       . - -.   - . - -   -   . . . .   - - -   - .' != '. . [24 chars]. . .-   .       . - - .   - . - -   -   . . . .   - - -   - .'
+- . .       . - . .   - - -   . . . -   .       . - -.   - . - -   -   . . . .   - - -   - .
+?                                  -
++ . .       . - . .   - - -   . . .-   .       . - - .   - . - -   -   . . . .   - - -   - .
+?                                                   +
+
+
+testCaseTea.test_text.TestTextFunc.test_word_2
+Traceback (most recent call last):
+  File "..\testCaseTea\test_text.py", line 18, in test_word_2
+    self.assertListEqual(li,[('tara', 11), ('arabic', 6), ('women', 5), ('esl', 5), ('each', 5), ('students', 4), ('rose', 4), ('other', 4), ('iraq', 4), ('day', 4)])
+AssertionError: Lists differ: [('ta[70 chars]ents', 4), ('other', 4), ('day', 4), ('class', 4), ('iraq', 3)] != [('ta[70 chars]ents', 4), ('rose', 4), ('other', 4), ('iraq', 4), ('day', 4)]
+
+First differing element 6:
+('other', 4)
+('rose', 4)
+
+  [('tara', 11),
+   ('arabic', 6),
+   ('women', 5),
+   ('esl', 5),
+   ('each', 5),
+   ('students', 4),
++  ('rose', 4),
+   ('other', 4),
++  ('iraq', 4),
+-  ('day', 4),
+?            ^
+
++  ('day', 4)]
+?            ^
+
+-  ('class', 4),
+-  ('iraq', 3)]
+
+testCaseTea.test_text.TestTextFunc.test_word_3
+Traceback (most recent call last):
+  File "..\testCaseTea\test_text.py", line 22, in test_word_3
+    self.assertListEqual(li,[('hacker', 78), ('hackers', 61), ('learn', 37), ('—', 33), ('source', 30), ('other', 28), ('software', 26), ('linux', 26), ('most', 25), ('culture', 25)])
+AssertionError: Lists differ: [('hacker', 72), ('hackers', 56), ('learn', 37), ('—',[93 chars] 24)] != [('hacker', 78), ('hackers', 61), ('learn', 37), ('—',[95 chars] 25)]
+
+First differing element 0:
+('hacker', 72)
+('hacker', 78)
+
+- [('hacker', 72),
+?              ^
+
++ [('hacker', 78),
+?              ^
+
+-  ('hackers', 56),
+?              -
+
++  ('hackers', 61),
+?               +
+
+   ('learn', 37),
+   ('—', 33),
+-  ('source', 28),
+?             ^^
+
++  ('source', 30),
+?             ^^
+
+   ('other', 28),
++  ('software', 26),
++  ('linux', 26),
+   ('most', 25),
+-  ('linux', 25),
+-  ('culture', 25),
+?                 ^
+
++  ('culture', 25)]
+?                 ^
+
+-  ('things', 24)]
+
+testCaseTea.test_num.TestNumFunc.test_d2b_4
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 20, in test_d2b_4
+    self.assertEqual(d2b(4294967295), '11111111111111111111111111111111')  # 32位的无符号极大值
+AssertionError: 'Parameter Error.' != '11111111111111111111111111111111'
+- Parameter Error.
++ 11111111111111111111111111111111
+
+
+testCaseTea.test_num.TestNumFunc.test_d2b_7
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 29, in test_d2b_7
+    self.assertEqual(d2b(2147483647), '1111111111111111111111111111111')   # 32位的有符号极大值
+AssertionError: 'Parameter Error.' != '1111111111111111111111111111111'
+- Parameter Error.
++ 1111111111111111111111111111111
+
+
+testCaseTea.test_num.TestNumFunc.test_d2b_8
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 32, in test_d2b_8
+    self.assertEqual(d2b(-2147483648), '10000000000000000000000000000000')   # 32位的有符号极小值
+AssertionError: 'Parameter Error.' != '10000000000000000000000000000000'
+- Parameter Error.
++ 10000000000000000000000000000000
+
+
+testCaseTea.test_num.TestNumFunc.test_get_changes_3
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 94, in test_get_changes_3
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4})
+AssertionError: {50: 0.0, 20: 0.0, 10: 0.0, 5: 0.0, 1: 1.0, 0.5: 0.0, 0.1: 3.0} != {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4}
+- {0.1: 3.0, 0.5: 0.0, 1: 1.0, 5: 0.0, 10: 0.0, 20: 0.0, 50: 0.0}
+?       ^^^       --       ^  --------     --       --       --
+
++ {0.1: 4, 0.5: 0, 1: 1, 5: 0, 10: 0, 20: 0, 50: 0}
+?       ^              ^^^^^
+
+
+testCaseTea.test_num.TestNumFunc.test_get_changes_4
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 99, in test_get_changes_4
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 1, 5: 1, 1: 4, 0.5: 1, 0.1: 0})
+AssertionError: {50: 0.0, 20: 0.0, 10: 1.0, 5: 1.0, 1: 4.0, 0.5: 1.0} != {50: 0, 20: 0, 10: 1, 5: 1, 1: 4, 0.5: 1, 0.1: 0}
+- {0.5: 1.0, 1: 4.0, 5: 1.0, 10: 1.0, 20: 0.0, 50: 0.0}
+?        --      --      --       --      --       --
+
++ {0.1: 0, 0.5: 1, 1: 4, 5: 1, 10: 1, 20: 0, 50: 0}
+?  ++++++++
+
+
+
+2. 执行出错的测试用例数量：1
+出错的测试用例：
+testCaseTea.test_num.TestNumFunc.test_b2d_9
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 62, in test_b2d_9
+    self.assertEqual(b2d('10000000000000000000000000000000',True), -2147483648)
+  File "..\numEx\num_hw.py", line 22, in b2d
+    int_num = int(str(binary_num), 2)
+ValueError: invalid literal for int() with base 2: '9999999999999999999999999999999'
+
+
+3. 通过的测试用例数量：65
+
+总分80分，最后得分：71
