@@ -1,0 +1,52 @@
+测试用例数量：73
+
+1. 失败的测试用例数量：4
+失败的测试用例：
+testCaseTea.test_num.TestNumFunc.test_b2d_4
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 47, in test_b2d_4
+    self.assertEqual(b2d('11111111111111111111111111111111'), 4294967295)
+AssertionError: -1 != 4294967295
+
+testCaseTea.test_num.TestNumFunc.test_b2d_8
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 59, in test_b2d_8
+    self.assertEqual(b2d('10000000000000000000000000000000'), 2147483648)
+AssertionError: -2147483648 != 2147483648
+
+testCaseTea.test_num.TestNumFunc.test_d2b_4
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 20, in test_d2b_4
+    self.assertEqual(d2b(4294967295), '11111111111111111111111111111111')  # 32位的无符号极大值
+AssertionError: 'Parameter Error.' != '11111111111111111111111111111111'
+- Parameter Error.
++ 11111111111111111111111111111111
+
+
+testCaseTea.test_num.TestNumFunc.test_get_changes_3
+Traceback (most recent call last):
+  File "..\testCaseTea\test_num.py", line 94, in test_get_changes_3
+    self.assertDictEqual(d, {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4})
+AssertionError: {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 3} != {50: 0, 20: 0, 10: 0, 5: 0, 1: 1, 0.5: 0, 0.1: 4}
+- {0.1: 3, 0.5: 0, 1: 1, 5: 0, 10: 0, 20: 0, 50: 0}
+?       ^
+
++ {0.1: 4, 0.5: 0, 1: 1, 5: 0, 10: 0, 20: 0, 50: 0}
+?       ^
+
+
+
+2. 错误的测试用例数量：1
+错误的测试用例：
+testCaseTea.test_text.TestTextFunc.test_morse_2
+Traceback (most recent call last):
+  File "..\testCaseTea\test_text.py", line 38, in test_morse_2
+    s = morse_code("I love Python")
+  File "..\textEx\text_hw.py", line 23, in morse_code
+    z = z + code[x[y]] + '   '
+KeyError: 'I'
+
+
+3. 通过的测试用例数量：68
+
+总分80分，最后得分：75

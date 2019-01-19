@@ -2,25 +2,8 @@
 
 1. 失败的测试用例数量：0
 
-2. 错误的测试用例数量：2
-错误的测试用例：
-testCaseTea.test_net.TestNetFunc.test_net_1
-Traceback (most recent call last):
-  File "..\testCaseTea\test_net.py", line 16, in test_net_1
-    self.assertGreater(len(get_weather(name)), 0)
-  File "..\netEx\net_hw.py", line 60, in get_weather
-    if item.text[:6] == "今日天气实况":
-TypeError: 'NoneType' object is not subscriptable
+2. 错误的测试用例数量：0
 
-testCaseTea.test_net.TestNetFunc.test_net_2
-Traceback (most recent call last):
-  File "..\testCaseTea\test_net.py", line 24, in test_net_2
-    self.assertGreater(len(get_weather(name)), 0)
-  File "..\netEx\net_hw.py", line 60, in get_weather
-    if item.text[:6] == "今日天气实况":
-TypeError: 'NoneType' object is not subscriptable
+3. 通过的测试用例数量：73
 
-
-3. 通过的测试用例数量：71
-
-总分80分，最后得分：78
+总分80分，最后得分：80
