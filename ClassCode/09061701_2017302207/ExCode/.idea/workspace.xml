@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bb4443f6-a61b-4dcf-8580-099905496106" name="Default Changelist" comment="" />
+    <list default="true" id="bb4443f6-a61b-4dcf-8580-099905496106" name="Default Changelist" comment="代码">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goldenNum/clients/09061701_2017302207_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goldenNum/play_golden_number.py" beforeDir="false" afterPath="$PROJECT_DIR$/goldenNum/play_golden_number.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numEx/golden_hw.py" beforeDir="false" afterPath="$PROJECT_DIR$/numEx/golden_hw.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/numEx/num_hw.py" beforeDir="false" afterPath="$PROJECT_DIR$/numEx/num_hw.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,40 +17,45 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/ExCode$linshi.coverage" NAME="linshi Coverage Results" MODIFIED="1547195310441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ExCode$num_hw.coverage" NAME="num_hw Coverage Results" MODIFIED="1547659463693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/numEx" />
     <SUITE FILE_PATH="coverage/ExCode$data_hw.coverage" NAME="data_hw Coverage Results" MODIFIED="1547697525019" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataEx" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_net_TestNumFunc.coverage" NAME="Unittests for test_net.TestNumFunc Coverage Results" MODIFIED="1547913233928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_num_py.coverage" NAME="Unittests in test_num.py Coverage Results" MODIFIED="1547919557241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$num_hw.coverage" NAME="num_hw Coverage Results" MODIFIED="1548064710104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/numEx" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_num_py.coverage" NAME="Unittests in test_num.py Coverage Results" MODIFIED="1547980269205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$play_golden_number.coverage" NAME="play_golden_number Coverage Results" MODIFIED="1548069962958" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/goldenNum" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_net_TestNumFunc.coverage" NAME="Unittests for test_net.TestNumFunc Coverage Results" MODIFIED="1548070435009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$0.coverage" NAME="0 Coverage Results" MODIFIED="1547890022589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ExCode$packages.coverage" NAME="packages Coverage Results" MODIFIED="1547899998503" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="D:/应用软件/python/Lib/site-packages/requests-2.21.0-py3.6.egg/requests" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_net_TestNumFunc_test_net.coverage" NAME="Unittests for test_net.TestNumFunc.test_net Coverage Results" MODIFIED="1547913230348" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_data_py.coverage" NAME="Unittests in test_data.py Coverage Results" MODIFIED="1547896382747" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_data_py.coverage" NAME="Unittests in test_data.py Coverage Results" MODIFIED="1548070457132" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc.coverage" NAME="Unittests for test_data.TestXmlFunc Coverage Results" MODIFIED="1547898220254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_class_TestClassFunc_test_object.coverage" NAME="Unittests for test_class.TestClassFunc.test_object Coverage Results" MODIFIED="1547898202349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_class_TestClassFunc.coverage" NAME="Unittests for test_class.TestClassFunc Coverage Results" MODIFIED="1547620828193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_golden_number.coverage" NAME="Unittests for test_num.TestNumFunc.test_golden_number Coverage Results" MODIFIED="1547659461408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$1.coverage" NAME="1 Coverage Results" MODIFIED="1547888390321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_text_py.coverage" NAME="Unittests in test_text.py Coverage Results" MODIFIED="1547898844803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_golden_number.coverage" NAME="Unittests for test_num.TestNumFunc.test_golden_number Coverage Results" MODIFIED="1547979219826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_text_py.coverage" NAME="Unittests in test_text.py Coverage Results" MODIFIED="1548070487179" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$db_hw.coverage" NAME="db_hw Coverage Results" MODIFIED="1547896335428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataEx" />
+    <SUITE FILE_PATH="coverage/ExCode$09061701_2017309993_client.coverage" NAME="09061701_2017309993_client Coverage Results" MODIFIED="1547990660636" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/goldenNum/clients" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_list_goods.coverage" NAME="Unittests for test_num.TestNumFunc.test_list_goods Coverage Results" MODIFIED="1547624696457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$class_hw.coverage" NAME="class_hw Coverage Results" MODIFIED="1547189350111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/classEx" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_class_TestClassFunc_test_calculation.coverage" NAME="Unittests for test_class.TestClassFunc.test_calculation Coverage Results" MODIFIED="1547620886979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc_test_data.coverage" NAME="Unittests for test_data.TestXmlFunc.test_data Coverage Results" MODIFIED="1547697533342" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_text_TestTextFunc_test_word.coverage" NAME="Unittests for test_text.TestTextFunc.test_word Coverage Results" MODIFIED="1547809310688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_sphere_distance.coverage" NAME="Unittests for test_num.TestNumFunc.test_sphere_distance Coverage Results" MODIFIED="1548070430684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$net_hw.coverage" NAME="net_hw Coverage Results" MODIFIED="1547913226566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/netEx" />
     <SUITE FILE_PATH="coverage/ExCode$filter_hw.coverage" NAME="filter_hw Coverage Results" MODIFIED="1547826385839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/textEx" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_text_TestTextFunc.coverage" NAME="Unittests for test_text.TestTextFunc Coverage Results" MODIFIED="1547809356081" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_text_TestTextFunc.coverage" NAME="Unittests for test_text.TestTextFunc Coverage Results" MODIFIED="1548070483880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_text_TestTextFunc_test_filter.coverage" NAME="Unittests for test_text.TestTextFunc.test_filter Coverage Results" MODIFIED="1547729855210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_class_py.coverage" NAME="Unittests in test_class.py Coverage Results" MODIFIED="1547620837220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$09061701_2017309998_client.coverage" NAME="09061701_2017309998_client Coverage Results" MODIFIED="1547974693741" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/goldenNum/clients" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_class_py.coverage" NAME="Unittests in test_class.py Coverage Results" MODIFIED="1548070468230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_text_TestTextFunc_test_morse.coverage" NAME="Unittests for test_text.TestTextFunc.test_morse Coverage Results" MODIFIED="1547656193194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc_test_db.coverage" NAME="Unittests for test_data.TestXmlFunc.test_db Coverage Results" MODIFIED="1547896375824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc_test_Xml1.coverage" NAME="Unittests for test_data.TestXmlFunc.test_Xml1 Coverage Results" MODIFIED="1547898215990" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$golden_hw.coverage" NAME="golden_hw Coverage Results" MODIFIED="1548070409869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/numEx" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc_test_db.coverage" NAME="Unittests for test_data.TestXmlFunc.test_db Coverage Results" MODIFIED="1548070450725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_data_TestXmlFunc_test_Xml1.coverage" NAME="Unittests for test_data.TestXmlFunc.test_Xml1 Coverage Results" MODIFIED="1548070440104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$xml_hw.coverage" NAME="xml_hw Coverage Results" MODIFIED="1547914383423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/dataEx" />
     <SUITE FILE_PATH="coverage/ExCode$text_hw.coverage" NAME="text_hw Coverage Results" MODIFIED="1547722008202" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/textEx" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_net_py.coverage" NAME="Unittests in test_net.py Coverage Results" MODIFIED="1547915005382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_in_test_net_py.coverage" NAME="Unittests in test_net.py Coverage Results" MODIFIED="1548070478948" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_d2b.coverage" NAME="Unittests for test_num.TestNumFunc.test_d2b Coverage Results" MODIFIED="1547623211360" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
     <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc_test_fibonacci.coverage" NAME="Unittests for test_num.TestNumFunc.test_fibonacci Coverage Results" MODIFIED="1547625163522" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
-    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc.coverage" NAME="Unittests for test_num.TestNumFunc Coverage Results" MODIFIED="1547659476362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
+    <SUITE FILE_PATH="coverage/ExCode$Unittests_for_test_num_TestNumFunc.coverage" NAME="Unittests for test_num.TestNumFunc Coverage Results" MODIFIED="1548064485872" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testCaseSt" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -92,29 +104,33 @@
     <session id="1590867583">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="py" value="2040" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="2040" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.40" value="2" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="39" />
         </counts>
       </usages-collector>
     </session>
@@ -122,31 +138,44 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/textEx/text_hw.py">
+        <entry file="file://$PROJECT_DIR$/numEx/golden_hw.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1610">
-              <caret line="70" column="24" selection-start-line="70" selection-start-column="24" selection-end-line="70" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataEx/xml_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2139">
-              <caret line="94" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="71">
+              <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
               <folding>
-                <element signature="e#42#51#0" expanded="true" />
+                <element signature="e#42#53#0" expanded="true" />
+                <marker date="1548070360853" expanded="true" signature="791:796" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCaseSt/test_data.py">
+        <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309999_client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="27" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="44" />
+            <state relative-caret-position="269">
+              <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017302207_client.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
+              <folding>
+                <element signature="e#42#53#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCaseSt/test_num.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
               <folding>
                 <element signature="e#42#57#0" expanded="true" />
               </folding>
@@ -157,8 +186,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testCaseSt/test_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+            <state relative-caret-position="69">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCaseSt/test_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/textEx/filter_hw.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCaseSt/test_class.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
               <folding>
                 <element signature="e#42#57#0" expanded="true" />
               </folding>
@@ -166,64 +222,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testCaseSt/test_num.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classEx/class_hw.py">
+        <entry file="file://$PROJECT_DIR$/goldenNum/play_golden_number.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1633">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataEx/data_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/netEx/net_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
-              <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/numEx/num_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4301">
-              <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataEx/db_hw.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2415">
-              <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+            <state relative-caret-position="-1403">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <element signature="e#59#73#0" expanded="true" />
+                <element signature="e#43#74#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testCaseSt/test_text.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -236,9 +263,19 @@
         <option value="$PROJECT_DIR$/dataEx/db_hw.py" />
         <option value="$PROJECT_DIR$/dataEx/xml_hw.py" />
         <option value="$PROJECT_DIR$/netEx/net_hw.py" />
-        <option value="$PROJECT_DIR$/numEx/num_hw.py" />
         <option value="$PROJECT_DIR$/textEx/filter_hw.py" />
         <option value="$PROJECT_DIR$/textEx/text_hw.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309999_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309998_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309997_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309996_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309995_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309994_client.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017309993_client.py" />
+        <option value="$PROJECT_DIR$/numEx/num_hw.py" />
+        <option value="$PROJECT_DIR$/goldenNum/play_golden_number.py" />
+        <option value="$PROJECT_DIR$/goldenNum/clients/09061701_2017302207_client.py" />
+        <option value="$PROJECT_DIR$/numEx/golden_hw.py" />
       </list>
     </option>
   </component>
@@ -249,9 +286,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="width" value="978" />
-    <option name="height" value="1039" />
+    <option name="x" value="-10" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -259,6 +296,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -275,6 +313,17 @@
               <item name="ExCode" type="b2602c69:ProjectViewProjectNode" />
               <item name="ExCode" type="462c0819:PsiDirectoryNode" />
               <item name="dataEx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExCode" type="462c0819:PsiDirectoryNode" />
+              <item name="goldenNum" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ExCode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ExCode" type="462c0819:PsiDirectoryNode" />
+              <item name="goldenNum" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ExCode" type="b2602c69:ProjectViewProjectNode" />
@@ -300,14 +349,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../最后文件/09061701_2017302207/ExCode" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -321,7 +370,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_num.py">
+  <component name="RunManager" selected="Python tests.Unittests in test_text.py">
+    <configuration name="Unittests for test_text.TestTextFunc" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="ExCode" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCaseSt" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_text.TestTextFunc&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in test_class.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ExCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -367,21 +431,6 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test_num.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="ExCode" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testCaseSt" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testCaseSt/test_num.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Unittests in test_text.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="ExCode" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -398,19 +447,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test_num.py" />
-      <item itemvalue="Python tests.Unittests in test_text.py" />
-      <item itemvalue="Python tests.Unittests in test_net.py" />
       <item itemvalue="Python tests.Unittests in test_data.py" />
       <item itemvalue="Python tests.Unittests in test_class.py" />
+      <item itemvalue="Python tests.Unittests in test_net.py" />
+      <item itemvalue="Python tests.Unittests for test_text.TestTextFunc" />
+      <item itemvalue="Python tests.Unittests in test_text.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test_num.py" />
+        <item itemvalue="Python tests.Unittests in test_text.py" />
+        <item itemvalue="Python tests.Unittests for test_text.TestTextFunc" />
         <item itemvalue="Python tests.Unittests in test_net.py" />
         <item itemvalue="Python tests.Unittests in test_class.py" />
         <item itemvalue="Python tests.Unittests in test_data.py" />
-        <item itemvalue="Python tests.Unittests in test_text.py" />
       </list>
     </recent_temporary>
   </component>
@@ -436,51 +485,59 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_num_TestNumFunc_test_d2b - 2019.01.20 at 00h 18m 37s.xml">
-      <configuration name="Unittests for test_num.TestNumFunc.test_d2b" configurationId="tests" />
+    <history-entry file="Unittests_for_test_num_TestNumFunc_test_sphere_distance - 2019.01.21 at 19h 33m 51s.xml">
+      <configuration name="Unittests for test_num.TestNumFunc.test_sphere_distance" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_num_TestNumFunc_test_d2b - 2019.01.20 at 00h 18m 41s.xml">
-      <configuration name="Unittests for test_num.TestNumFunc.test_d2b" configurationId="tests" />
+    <history-entry file="Unittests_for_test_net_TestNumFunc - 2019.01.21 at 19h 33m 55s.xml">
+      <configuration name="Unittests for test_net.TestNumFunc" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_test_num_TestNumFunc_test_d2b - 2019.01.20 at 00h 18m 44s.xml">
-      <configuration name="Unittests for test_num.TestNumFunc.test_d2b" configurationId="tests" />
+    <history-entry file="Unittests_for_test_data_TestXmlFunc_test_Xml1 - 2019.01.21 at 19h 34m 00s.xml">
+      <configuration name="Unittests for test_data.TestXmlFunc.test_Xml1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_num_py - 2019.01.20 at 00h 18m 47s.xml">
-      <configuration name="Unittests in test_num.py" configurationId="tests" />
+    <history-entry file="Unittests_for_test_data_TestXmlFunc_test_db - 2019.01.21 at 19h 34m 12s.xml">
+      <configuration name="Unittests for test_data.TestXmlFunc.test_db" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_text_py - 2019.01.20 at 00h 18m 52s.xml">
-      <configuration name="Unittests in test_text.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_net_py - 2019.01.20 at 00h 18m 57s.xml">
-      <configuration name="Unittests in test_net.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_data_py - 2019.01.20 at 00h 19m 03s.xml">
+    <history-entry file="Unittests_in_test_data_py - 2019.01.21 at 19h 34m 18s.xml">
       <configuration name="Unittests in test_data.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_class_py - 2019.01.20 at 00h 19m 08s.xml">
+    <history-entry file="Unittests_in_test_class_py - 2019.01.21 at 19h 34m 28s.xml">
       <configuration name="Unittests in test_class.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_net_py - 2019.01.20 at 00h 23m 25s.xml">
+    <history-entry file="Unittests_in_test_net_py - 2019.01.21 at 19h 34m 32s.xml">
       <configuration name="Unittests in test_net.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_test_num_py - 2019.01.20 at 01h 39m 18s.xml">
-      <configuration name="Unittests in test_num.py" configurationId="tests" />
+    <history-entry file="Unittests_in_test_net_py - 2019.01.21 at 19h 34m 39s.xml">
+      <configuration name="Unittests in test_net.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_text_TestTextFunc - 2019.01.21 at 19h 34m 44s.xml">
+      <configuration name="Unittests for test_text.TestTextFunc" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_text_py - 2019.01.21 at 19h 34m 47s.xml">
+      <configuration name="Unittests in test_text.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16487935" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22252011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32892805" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34948605" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32844576" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
@@ -490,7 +547,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" auto_hide="true" x="687" y="180" width="657" height="469" id="SciView" order="3" show_stripe_button="false" type="FLOATING" weight="0.3036193" />
       <window_info anchor="right" id="R Graphics" order="4" />
       <window_info anchor="right" id="R Packages" order="5" />
       <window_info anchor="right" id="Database" order="6" weight="0.053619303" />
@@ -532,33 +589,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="代码" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/numEx/golden_hw.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCaseSt/test_text.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCaseSt/test_class.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/textEx/filter_hw.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/textEx/text_hw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1610">
@@ -570,19 +600,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2139">
           <caret line="94" selection-start-line="94" selection-end-line="94" />
-          <folding>
-            <element signature="e#42#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCaseSt/test_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="27" selection-start-line="48" selection-start-column="26" selection-end-line="48" selection-end-column="44" />
-          <folding>
-            <element signature="e#42#57#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -593,51 +610,155 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dataEx/db_hw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2415">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309996_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309997_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309998_client.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309993_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataEx/data_hw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/netEx/net_hw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="47" column="29" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        <state relative-caret-position="920">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309994_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/numEx/num_hw.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4301">
-          <caret line="187" column="36" selection-start-line="187" selection-start-column="36" selection-end-line="187" selection-end-column="36" />
+        <state relative-caret-position="350">
+          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataEx/db_hw.py">
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309995_client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2415">
-          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+        <state relative-caret-position="155">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017309999_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goldenNum/clients/09061701_2017302207_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="82" column="46" selection-start-line="82" selection-start-column="46" selection-end-line="82" selection-end-column="46" />
           <folding>
-            <element signature="e#59#73#0" expanded="true" />
+            <element signature="e#42#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCaseSt/test_net.py">
+    <entry file="file://$PROJECT_DIR$/goldenNum/play_golden_number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="-1403">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
           <folding>
-            <element signature="e#42#57#0" expanded="true" />
+            <element signature="e#43#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/numEx/golden_hw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="90" column="9" selection-start-line="90" selection-start-column="9" selection-end-line="90" selection-end-column="9" />
+          <folding>
+            <element signature="e#42#53#0" expanded="true" />
+            <marker date="1548070360853" expanded="true" signature="791:796" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testCaseSt/test_num.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="64" column="28" selection-start-line="64" selection-start-column="28" selection-end-line="64" selection-end-column="28" />
+          <folding>
+            <element signature="e#42#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCaseSt/test_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/textEx/filter_hw.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="107" column="15" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCaseSt/test_class.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#42#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCaseSt/test_net.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCaseSt/test_text.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>

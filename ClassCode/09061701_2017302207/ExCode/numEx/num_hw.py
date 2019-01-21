@@ -158,7 +158,7 @@ def sphere_distance(p1, p2):
         a = sin(dlat / 2) ** 2 + cos(lat_1) * cos(lat_2) * sin(dlon / 2) ** 2
         c = 2 * asin(sqrt(a))
         r = 6371  # 地球平均半径，单位为公里
-        return c * r
+        return round(c * r,2)
 		
 
 # 题目四：计算Fibonacci 序列的值
@@ -189,4 +189,4 @@ def fibonacci_loop(number):
 
 
 if __name__ == '__main__':
-    pass
+    print(sphere_distance((34.24, 108.95), (30.89, 121.33)))

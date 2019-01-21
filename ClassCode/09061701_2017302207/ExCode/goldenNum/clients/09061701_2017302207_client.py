@@ -39,7 +39,7 @@ def get_number(h_data):
     # g_number = round((0.618 * sum_number/len(h_data)),10)
 
     for name, nums in h_data.items():
-        if len(nums) == 0 :
+        if len(nums) == 0:
             g_number = 50
             data1 = g_number % 100
             data2 = (g_number + 1) % 100
@@ -50,12 +50,11 @@ def get_number(h_data):
             # n_list = [[] for row in range(len(h_data[name]))]
             #  col列(玩家数) row 行（轮数）
 
-
             for num_generation in range(len(h_data[name])):
                 sum_number = 0
                 # det_sum = 0
                 # n_list[num_generation].append(num_generation+1)
-                generation.append(num_generation+1)      # 每一轮
+                generation.append(num_generation + 1)  # 每一轮
                 for name_gen, nums2 in h_data.items():
                     if len(nums) > 0:
                         n1, n2 = nums2[num_generation]
@@ -68,8 +67,7 @@ def get_number(h_data):
                 g_group.append(g_number)
                 # det_data = round(( det_sum/ len(h_data)), 10)
                 # det_group.append(det_data)
-            g_before = [50]+g_group[:-1]
-
+            g_before = [50] + g_group[:-1]
 
             # if (len(n_list)) == 1:
             #     n_new = [0,100,100,100]
@@ -79,9 +77,9 @@ def get_number(h_data):
             # N = poly.fit_transform(n_new)
             # newlist = np.array(n_list[-1]).reshape(len(n_list[-1],-1))
 
-            g_group = np.array(g_group).reshape([len(g_group),-1])
+            g_group = np.array(g_group).reshape([len(g_group), -1])
             generation = np.array(generation).reshape([len(generation), -1])
-            g_before = np.array(g_before).reshape([len(g_before),-1])
+            g_before = np.array(g_before).reshape([len(g_before), -1])
             poly = PolynomialFeatures(degree=2)
             # generation_poly =poly.fit_transform(generation)
             g_before_poly = poly.fit_transform(g_before)
@@ -100,12 +98,12 @@ def get_number(h_data):
             # # # ridge2 = Ridge()
             # # # ridge2.fit(generation,det_group)
             # # # det_next = ridge2.predict(np.array([gen+1]).reshape(1,-1))
-            g_next_ =g_next[0][0]%100
+            g_next_ = g_next[0][0] % 100
             # # det_next_ = det_next[0][0]
             # # data1_next = round(g_next_ +det_next_/2,10)
             # # data2_next = round(g_next_ - det_next_/2,10)
 
-            return g_number,g_next_
+            return g_number, g_next_
 
 
 # 可用于代码运行时间的简单测试
@@ -135,4 +133,4 @@ if __name__ == '__main__':
             'Bart' : [(42.3, 34.5), (23.4, 15.6), (72.3, 74.5)],
             'Mary' : [(62.3, 47.5), (23.4, 57.6), (72.3, 24.5)]}
     print(get_number(history_data))
-    print(get_time())
+

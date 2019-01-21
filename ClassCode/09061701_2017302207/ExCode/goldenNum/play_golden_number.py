@@ -9,6 +9,7 @@ import os
 import copy
 
 
+
 def get_client_files(source_dir):
     fp = os.listdir(source_dir)
     _file_list = []
@@ -203,6 +204,7 @@ if __name__ == '__main__':
         plot_score(ax2, score)
         plt.draw()
         plt.pause(0.1)
+
 
     os.system("pause")
 
