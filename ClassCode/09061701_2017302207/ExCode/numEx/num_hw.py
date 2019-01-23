@@ -6,7 +6,7 @@
 def d2b(decimal_int):
     if type(decimal_int)!=type(0):
         return 'Parameter Error.'
-    if decimal_int < -(2**32) or decimal_int > 2**32-1:
+    if decimal_int < -2147483648 or decimal_int > 4294967295:
         return 'Parameter Error.'
     else:
         bi=''
@@ -46,7 +46,7 @@ def d2b(decimal_int):
                         bi=bi.replace(bi[-num2],'0')
                     break
 
-            return bi
+            return '1'+bi[1:]
 
         return bi
 
@@ -70,20 +70,37 @@ def b2d(binary_string, flag = False):
                 if binary_string[num] == str(1):
                     dec += 2 ** (len(binary_string) - num - 1)
         else:
-            binary_string=binary_string[1:]
-            binary_string=int(binary_string)
-
-            binary_string-=1
-            binary_string=str(binary_string)
+            # flag = True
+            if not len(binary_string) == 32:
+                return 'Parameter Error.'
 
             binary_string=binary_string.replace('0','2')
             binary_string =binary_string.replace('1','0')
 
             binary_string =binary_string.replace('2','1')
+
+            bi = ''
+            for num in range(1,len(binary_string)+1):
+                if binary_string[-num]=='0':
+                    list_bin=list(binary_string)
+                    list_bin[-num]='1'
+
+
+                    for num2 in range(1,num):
+                        list_bin[-num2] = '0'
+                    bi = ''.join(list_bin)
+                    break
+
+            binary_string = list(bi)
             dec = 0
-            for num in range(0, len(binary_string)):
-                if binary_string[num] == str(1):
+
+            for num in range(len(binary_string)):
+                if binary_string[num] == '1':
+
                     dec += 2 ** (len(binary_string) - num - 1)
+                else:
+                    pass
+
             dec=-dec
     return dec
 
@@ -122,15 +139,19 @@ def get_changes(items, pay):
         price = 0
         for item in items:
             price += item_dict[item]
+
         if pay < price:
             return '支付金额不足，请重新支付。'
         else:
             change = pay - price
+            change = round(change,1)
+
             changelist = {50: 0, 20: 0, 10: 0, 5: 0, 1: 0, 0.5: 0, 0.1: 0}
             for mianzhi in money:
                 while change >= mianzhi:
+
                     changelist[mianzhi] = int(change // mianzhi)
-                    change = change - mianzhi * (change // mianzhi)
+                    change = round(change - mianzhi * (change // mianzhi),1)
             return changelist
 		
 
@@ -189,4 +210,5 @@ def fibonacci_loop(number):
 
 
 if __name__ == '__main__':
-    print(sphere_distance((34.24, 108.95), (30.89, 121.33)))
+    d = get_changes(['item01', 'item03'], 20)
+    print(d)

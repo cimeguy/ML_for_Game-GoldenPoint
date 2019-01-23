@@ -24,7 +24,7 @@ def create_db(path):
                      foreign key (POSITIONID) references Position)''')
         curs.execute('''CREATE TABLE Position
                         (POSITIONID VARCHAR PRIMARY KEY CHECK (POSITIONID in ('A', 'B', 'C', 'D')),
-                        SALARY INT CHECK (SALARY in (10000,6000,3000,1000)))''')
+                        SALARY INT )''')
         set_level_salary('A', 10000)
         set_level_salary('B', 6000)
         set_level_salary('C', 3000)
@@ -67,18 +67,31 @@ def delete_employee(person):
 
 
 def set_level_salary(level,salary):
-    set_tuple = level, salary
+    set_tuple1 =  salary,level
+    set_tuple =  level,salary
 
     conn = sqlite3.connect(db_path)
     curs = conn.cursor()
+
+    check = '''SELECT * FROM POSITION '''
+    results =  curs.execute(check)
+    res = results.fetchall()
+
+    for r in res:
+        if r[0] ==level:
+
+            ins2 = 'DELETE FROM Position WHERE POSITIONID = ?'
+            curs.execute(ins2,(level,))
+            conn.commit()
+
     try:
-        ins = 'INSERT INTO Position (POSITIONID , SALARY) VALUES (?, ? )'
+        # ins = 'UPDATE Position SET SALARY = ? WHERE POSITIONID =?'
+        ins = 'INSERT INTO Position(POSITIONID,SALARY) VALUES(?,?)'
         curs.execute(ins, set_tuple)
         conn.commit()
         conn.close()
         return 0
     except:
-        conn.close()
         return -1
 
 
@@ -108,4 +121,16 @@ def get_total_salary():
 
 
 if __name__ == "__main__":
-    pass
+    path = './test.db'
+    if os.path.exists(path):
+        os.remove(path)
+
+    create_db(path)
+
+    print(new_employee(("tom", "m", "2018-09-01", "123456789"), "A"))
+    new_employee(("too", "f", "2017-09-01", "123456788"), "B")
+
+    print(get_total_salary())
+    delete_employee("123456788")
+    set_level_salary("A", 2)
+    print(get_total_salary())

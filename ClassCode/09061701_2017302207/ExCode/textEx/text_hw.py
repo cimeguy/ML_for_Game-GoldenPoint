@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
 
-
+import string
 # 题目五：摩斯码生成器
 def morse_code(usr_str):
     usr_str = usr_str.upper()
@@ -34,6 +34,10 @@ def word_freq(path):
             break
         data += line
     fin.close()
+    for i in data:
+        if i in string.whitespace:
+            data = data.replace(i, ' ')
+
     data = data.replace(',', ' ')
     data = data.replace('.', ' ')
     data = data.replace(':', ' ')
@@ -42,19 +46,26 @@ def word_freq(path):
     data = data.replace('?', ' ')
     data = data.replace('-', ' ')
     data = data.replace('!', ' ')
+    data = data.replace('(', ' ')
+    data = data.replace(')', ' ')
+    data = data.replace('/', ' ')
+
     data = data.lower()
     line_list = data.split(' ')
+    print(line_list)
     finsight = open('../testCaseSt/testData/sight word.txt', 'rt')
     sights = finsight.read()
     finsight.close()
     sights = sights.lower()
     sights_list = sights.split(' ')
+
     for num in range(len(line_list)):
         dict_[line_list[num]] = line_list.count(line_list[num])
     for num2 in range(len(sights_list)):
         if sights_list[num2] in line_list and not sights_list[num2] == '':
             del dict_[sights_list[num2]]
     del dict_['']
+
     sort_dict_list = sorted(dict_.items(), key=lambda x: x[1], reverse=True)
     s = dict(sort_dict_list)
     list_values = list(s.values())
@@ -72,5 +83,8 @@ def word_freq(path):
 
 
 if __name__ == '__main__':
-    pass
+    li = word_freq('../testCaseSt/testData/text2.txt')
+    print(li)
 
+# [('hacker', 78), ('hackers', 61), ('learn', 37), ('—', 33), ('source', 30), ('other', 28),
+# ('software', 26), ('linux', 26), ('most', 25), ('culture', 25)])

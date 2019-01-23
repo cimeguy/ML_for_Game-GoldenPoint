@@ -16,7 +16,30 @@ class TestTextFunc(unittest.TestCase):
         li = word_freq( './testData/sight word.txt')
         self.assertListEqual(li,[])
 
+    def test_word_1(self):
+        li = word_freq('./testData/text0.txt')
+        self.assertListEqual(li, [('b', 16), ('shorts', 4), ('ok', 4), ('dollars', 4), ('welcome', 2), ('twenty', 2),
+                                  ('thanks', 2), ('purple', 2), ('nice', 2), ('need', 2)])
 
+    def test_word_2(self):
+        li = word_freq('./testData/text1.txt')
+        self.assertListEqual(li, [('tara', 11), ('arabic', 6), ('women', 5), ('esl', 5), ('each', 5), ('students', 4),
+                                  ('rose', 4), ('other', 4), ('iraq', 4), ('day', 4)])
+
+    def test_word_3(self):
+        li = word_freq('./testData/text2.txt')
+        self.assertListEqual(li,
+                             [('hacker', 78), ('hackers', 61), ('learn', 37), ('—', 33), ('source', 30), ('other', 28),
+                              ('software', 26), ('linux', 26), ('most', 25), ('culture', 25)])
+
+    def test_word_4(self):
+        li = word_freq('./testData/text3.txt')
+        self.assertListEqual(li, [('1000', 5), ('place', 4), ('house', 4), ('back', 4), ('visit', 3), ('himself', 3),
+                                  ('happy', 3), ('great', 3), ('dogs', 3), ('wagging', 2)])
+
+    def test_word_5(self):
+        li = word_freq('./testData/sight word.txt')
+        self.assertListEqual(li, [])
     # 题目：morse code
     def test_morse(self):
         s = morse_code("i am morse 258")
